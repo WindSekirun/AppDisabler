@@ -16,7 +16,7 @@
             android:layout_height="40dip"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:src="@drawable/ic_actionbar" />
+            android:src="@drawable/ic_launcher" />
     </RelativeLayout>
 
     <FrameLayout
