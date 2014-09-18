@@ -136,7 +136,7 @@ public class MainActivity extends Activity {
 				String applicationName = (String) (ai != null ? pm.getApplicationLabel(ai) : "(unknown)");
 				appname.add(applicationName);
 				Drawable applicationIcon = (Drawable) (ai != null ? pm.getApplicationIcon(ai) : getResources().getDrawable(
-						R.drawable.ic_actionbar));
+						R.drawable.ic_launcher));
 				appicon.add(applicationIcon);
 				if (ai == null) {
 					unknown.sendEmptyMessage(0);
