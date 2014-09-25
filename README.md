@@ -3,8 +3,43 @@ App-disabler
 
 Android System Application disabler (need a root)
 
-This project need RootTools Project(by Stericson)
-https://github.com/Stericson/RootTools
+Install
+============
+
+1. Add RootTools Library to project depency. (https://github.com/Stericson/RootTools)
+   (or add RootTools jar file into /libs)
+2. Add MainActivity and row_disabler.xml to your project
+3. Just run
+
+This project uses RootTools Library(by Stericson), version 3.3.
+if you want use RootTools 2.6 or below, 
+change this code
+
+RootTools.getShell(true).add(command);
+
+to 
+
+RootTools.getShell(true).add(command).waitForFinished():
+
+Advance
+============
+
+1. if you want disable / enable data application, 
+
+change this code (MainActivity)
+Command command = new Command(0, "pm list packages -s -e") {
+
+to 
+
+Command command = new Command(0, "pm list packages -e") {
+
+change this code(EnableActivity)
+
+Command command = new Command(0, "pm list packages -s -d") {
+
+to 
+
+Command command = new Command(0, "pm list packages -d") {
 
 License
 ============
