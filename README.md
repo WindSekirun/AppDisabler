@@ -21,25 +21,29 @@ to
 
 RootTools.getShell(true).add(command).waitForFinished():
 
+
 Advance
 ============
 
 1. if you want disable / enable data application, 
 
-change this code (MainActivity)
+in MainActivity. change this code 
+
 Command command = new Command(0, "pm list packages -s -e") {
 
 to 
 
 Command command = new Command(0, "pm list packages -e") {
 
-change this code(EnableActivity)
+in EnableActivity. change this code 
 
 Command command = new Command(0, "pm list packages -s -d") {
 
 to 
 
 Command command = new Command(0, "pm list packages -d") {
+
+
 
 License
 ============
