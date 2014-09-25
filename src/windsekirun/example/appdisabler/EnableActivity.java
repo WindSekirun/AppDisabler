@@ -26,7 +26,7 @@ import com.stericson.RootTools.RootTools;
 import com.stericson.RootTools.execution.Command;
 import com.stericson.RootTools.execution.CommandCapture;
 
-public class EanbleActivity extends Activity {
+public class EnableActivity extends Activity {
 	
 	public ListView list;
 	public ArrayList<Menu> pd;
