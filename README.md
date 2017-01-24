@@ -21,13 +21,11 @@ change this code ````RootTools.getShell(true).add(command);```` to
 
 in MainActivity. change this code 
 
-````Command command = new Command(0, "pm list packages -s -e") {```` to 
-````Command command = new Command(0, "pm list packages -e") {````
+````"pm list packages -s -e"```` to ````"pm list packages -e"````
 
 in EnableActivity. change this code 
 
-````Command command = new Command(0, "pm list packages -s -d") {````to 
-````Command command = new Command(0, "pm list packages -d") {````
+````"pm list packages -s -d"```` to ````"pm list packages -d" ````
 
 ## License
 
