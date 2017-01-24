@@ -15,9 +15,7 @@ change this code ````RootTools.getShell(true).add(command);```` to
 ```` RootTools.getShell(true).add(command).waitForFinished(); ````
 
 ## Advanced
-
-
-1. if you want disable / enable data application, 
+if you want disable / enable data application, 
 
 in MainActivity. change this code 
 
