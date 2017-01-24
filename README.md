@@ -1,10 +1,8 @@
-App-disabler
-============
+# App-disabler
+Android System Application disabler (need a root), based RootTools
 
-Android System Application disabler (need a root)
+## Install
 
-Install
-============
 
 1. Add RootTools Library to project depency. (https://github.com/Stericson/RootTools)
    (or add RootTools jar file into /libs)
@@ -13,40 +11,25 @@ Install
 
 This project uses RootTools Library(by Stericson), version 3.3.
 if you want use RootTools 2.6 or below, 
-change this code
+change this code ````RootTools.getShell(true).add(command);```` to 
+```` RootTools.getShell(true).add(command).waitForFinished(); ````
 
-RootTools.getShell(true).add(command);
+## Advanced
 
-to 
-
-RootTools.getShell(true).add(command).waitForFinished():
-
-
-Advance
-============
 
 1. if you want disable / enable data application, 
 
 in MainActivity. change this code 
 
-Command command = new Command(0, "pm list packages -s -e") {
-
-to 
-
-Command command = new Command(0, "pm list packages -e") {
+````Command command = new Command(0, "pm list packages -s -e") {```` to 
+````Command command = new Command(0, "pm list packages -e") {````
 
 in EnableActivity. change this code 
 
-Command command = new Command(0, "pm list packages -s -d") {
+````Command command = new Command(0, "pm list packages -s -d") {````to 
+````Command command = new Command(0, "pm list packages -d") {````
 
-to 
-
-Command command = new Command(0, "pm list packages -d") {
-
-
-
-License
-============
+## License
 
 Copyright (c) 2013 - 2014 @WindSekirun. 
 
