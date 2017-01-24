@@ -1,4 +1,4 @@
-package windsekirun.example.appdiasbler
+package windsekirun.example.appdiasbler;
 
 import android.app.Activity;
 import java.io.BufferedReader;
